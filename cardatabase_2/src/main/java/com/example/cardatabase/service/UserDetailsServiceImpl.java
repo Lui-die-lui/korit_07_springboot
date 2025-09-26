@@ -1,4 +1,4 @@
-package com.example.cardatabase.UserDetailsServiceImpl;
+package com.example.cardatabase.service;
 
 import com.example.cardatabase.domain.AppUser;
 import com.example.cardatabase.domain.AppUserRepository;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-
+@Service
 public class UserDetailsServiceImpl implements UserDetailsService {
     private final AppUserRepository userRepository;
     // 생성자 주입

@@ -9,7 +9,7 @@ import lombok.*;
 public class Car {
     // id 컬럼 만듦
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // auto_increment
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment - mariaDB, MySQL 이거 써야함 AUTO 대신
     private Long id;
     private String brand, model, color, registrationNumber;
     private int modelYear, price;
